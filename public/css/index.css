@@ -1,0 +1,29 @@
+.navbar-brand {
+    font-family: Viga;
+    font-size: 25px;
+}
+
+.jumbotron {
+    min-height: 590px;
+}
+
+section {
+    min-height: 600px;
+}
+
+.form-control {
+    width: 300px;
+}
+
+hr {
+    width: 400px;
+    border: 1px solid black;
+}
+
+.gambarHeader {
+    width: 250px;
+}
+
+.a {
+    text-decoration: none;
+}

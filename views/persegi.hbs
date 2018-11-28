@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+
+  <!-- My CSS -->
+  <link rel="stylesheet" href="css/index.css">
+
+
+  <title>Persegi</title>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="/">Rumusku</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#">BMI</a>
+          <a class="nav-item nav-link" href="#">Bangun</a>
+          <a class="nav-item nav-link disabled" href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Akhir Navbar -->
+
+  <!-- Persegi -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col text-center mt-4">
+          <h2>Persegi</h2>
+          <hr>
+          <img src="../img/bangun_datar/persegi.png" alt="rumus persegi" width="200">
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-8 mt-4">
+          <h4>Definisi : </h4>
+          <p class="ml-4">Persegi adalah bangun datar dua dimensi yang dibentuk oleh empat buah rusuk yang sama panjang
+            dan memiliki empat buah sudut siku-siku.</p>
+          <h4>Sifat-Sifat : </h4>
+          <p class="ml-4">
+            <ul>
+              <li>Mempunyai 4 titik sudut.</li>
+              <li>Mempunyai 4 sudut siku-siku 90⁰.</li>
+              <li>Mempunyai 2 diagonal yang sama panjang.</li>
+              <li>Mempunyai 4 simetri lipat.</li>
+              <li>Mempunyai 4 simetri putar.</li>
+            </ul>
+          </p>
+          <h4>Rumus :</h4>
+          <p>
+            <ul>
+              <li>Keliling : 4 X S </li>
+              <li>Luas : S X S (s<sup>2</sup>)</li>
+            </ul>
+            Keterangan :
+            <ul>
+              <li>S = Sisi</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Akhir Persegi -->
+
+  <!-- Menghitung Rumus Persegi -->
+  <section class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center mt-4">
+          <h2>Menghitung Rumus Persegi</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-4 mt-4">
+          <h4>1. Menghitung Keliling</h4>
+          <p>Rumus : 4 X S</p>
+          <p>
+            <form action="/kPersegi" id="formK" method="POST">
+              <Label>Masukan sisi (Cm)</Label>
+              <input type="text" name="sisi" id="sisi" class="form-control">
+              <label for="hasilK">Hasil :</label>
+              <input type="text" name="hasilL" id="hasilK" class="form-control mt-2" disabled>
+              <button type="submit" class="btn btn-primary mt-4">Hitung</button>
+              <button type="submit" class="btn btn-danger mt-4" onclick="reset()">Reset</button>
+            </form>
+          </p>
+        </div>
+        <div class="col-md-3 mt-4">
+          <h4>2. Menghitung Luas</h4>
+          <p>Rumus : S X S (S<sup>2</sup> )</p>
+          <p>
+            <form action="/lPersegi" id="formL" method="POST">
+              <Label>Masukan sisi (Cm)</Label>
+              <input type="text" name="sisi" id="sisi" class="form-control">
+              <label for="hasilL">Hasil : </label>
+              <input type="text" name="hasilL" id="hasilL" class="form-control mt-2" disabled>
+              <button type="submit" class="btn btn-primary mt-4">Hitung</button>
+              <button type="submit" class="btn btn-danger mt-4" onclick="reset()">Reset</button>
+            </form>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Ahir Menghitung -->
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  {{!--
+  <script src="js/bangun_datar/persegi.js"></script> --}}
+</body>
+
+</html>
